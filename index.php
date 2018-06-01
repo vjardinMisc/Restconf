@@ -1,5 +1,5 @@
-<?
-include "vendor/autoload.php";
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Twitter\Search\Search;
 
@@ -9,5 +9,3 @@ $value = ["q" => "restconf"];
 echo "<pre>";
 print_r($search->search($value));
 echo "</pre>";
-?>
-
